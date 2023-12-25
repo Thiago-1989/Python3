@@ -1,14 +1,27 @@
-print("Escreva o peso de cinco pessoas para sabem qual tem o maior e menor peso")
+# Leia o peso de 5 pessoas para sabem qual tem o maior e menor peso
 peso = {}
-maiorPeso = 0
+maiorPeso = 0.0
+menorPeso = 0.0
 maisPesado = ""
-for i in range(0, 2):
+maisLeve = ""
+for i in range(0, 5):
     print(i)
     nome = str(input("Digite o nome: ")).strip().capitalize()
-    peso[i] = int(input("Digite o peso: "))
+    peso[i] = float(input("Digite o peso: "))
 
-    if peso[i] > maiorPeso:
+    if i == 0:
         maiorPeso = peso[i]
+        menorPeso = peso[i]
+        maisPesado = nome
+        maisLeve = nome
+
+    elif peso[i] > maiorPeso:
+        maiorPeso = float(peso[i])
         maisPesado = nome
 
-print("\nO maior peso foi o de {}, com {}Kg.".format(maisPesado, maiorPeso))
+    elif peso[i] < menorPeso:
+        menorPeso = float(peso[i])
+        maisLeve = nome
+
+print("\nO maior peso foi o de {}, com {:.1f}Kg e o menor peso foi o de {} "
+      "com {:.1f}Kg.".format(maisPesado, maiorPeso, maisLeve, menorPeso))

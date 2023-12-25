@@ -6,6 +6,6 @@ print("Contagem regressiva!\n")
 
 for c in range(10, -1, -1):
     print(c)
-    sleep(1)
+    sleep(.7)
 
-print(emoji.emojize('🎆'))
+print(emoji.emojize('Bumm! Bumm! Poow! 🎆'))
