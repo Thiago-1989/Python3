@@ -8,3 +8,4 @@ while "M" != sexo != "F":
         print("Sexo feminino.")
     else:
         print("Dados inválidos, digite novamente")
+        
