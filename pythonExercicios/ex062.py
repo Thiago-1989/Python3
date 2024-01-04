@@ -1,10 +1,12 @@
 # 10 termos de uma Progressão Aritmética, perguntando se o usuário deseja solicitar nova PA.
 
-primeiro_termo = int(input("Digite o primeiro termo da progressão aritmética:\n"))
-razao = int(input("Digite a razão da PA:\n"))
+primeiro_termo = int(input("Gerador de PA \n==============================="
+                           "\nPrimeiro termo:\n"))
+termo = 1
+razao = int(input("Razão:\n"))
 cont = 0
 continuar = 10
-while True:
+while termo > 0:
     print("Os termos da PA são:\n")
     i = 0
     while i < continuar:
@@ -17,4 +19,4 @@ while True:
     if continuar == 0:
         break
 
-print("Programa encerrado.")
+print("Programa encerrado com {} termos exibidos.".format(cont))

@@ -1,4 +1,71 @@
+# Código modificado após melhor compreensão do enunciado.
 # Calculadora
+
+from time import sleep
+
+num1 = int(input("Digite um número: "))
+num2 = int(input("Digite outro número: "))
+opcao = 0
+
+while opcao != 5:
+    print("\n_______Calculadora_______")
+    print("\033[0;31mEscolha a operação a ser realizada.\033[m")
+    print("__________Menu__________")
+    print("[1]Soma \n[2]Multiplicação \n[3]Maior \n[4]Novos números \n[5]Sair ")
+    print("________________________")
+    opcao = int(input("\033[0;32mEscolha a opção desejada.\033[m\n"))
+
+    if opcao == 1:
+        operacao = num1 + num2
+        print("A soma entre {} e {} é {}".format(num1, num2, operacao))
+        continua = str(input("Deseja continuar [S/N]?")).upper().strip()
+        if continua == "N":
+            opcao = 5
+
+    elif opcao == 2:
+        operacao = num1 * num2
+        print("A mutiplicação entre {} e {} é {}".format(num1, num2, operacao))
+        continua = str(input("Deseja continuar [S/N]?")).upper().strip()
+        if continua == "N":
+            opcao = 5
+
+    elif opcao == 3:
+        if num1 == num2:
+            print("Os dois números são iguais.")
+            continua = str(input("Deseja continuar [S/N]?")).upper().strip()
+            if continua == "N":
+                opcao = 5
+        elif num1 > num2:
+            operacao = num1
+            print("O maior número digitado foi {}".format(operacao))
+            continua = str(input("Deseja continuar [S/N]?")).upper().strip()
+            if continua == "N":
+                opcao = 5
+        else:
+            operacao = num2
+            print("O maior número digitado foi {}".format(operacao))
+            continua = str(input("Deseja continuar [S/N]?")).upper().strip()
+            if continua == "N":
+                opcao = 5
+
+    elif opcao == 4:
+        print("Reiniciando...")
+        sleep(2)
+        num1 = int(input("Digite um número: "))
+        num2 = int(input("Digite outro número: "))
+
+    elif opcao == 5:
+        print("_____FIM_____")
+
+    else:
+        sleep(1)
+        print("Opção inválida! Tente novamente.")
+        sleep(1)
+        print("Reiniciando...")
+        sleep(2)
+
+# 1º Código criado
+"""
 from time import sleep
 
 num1 = 0
@@ -56,3 +123,4 @@ while opcao != 5:
         sleep(1)
         print("Reiniciando...")
         sleep(2)
+"""
