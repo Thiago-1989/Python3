@@ -1,7 +1,9 @@
 # 10 termos de uma PA(Progressão aritmética).
 
-primeiro_termo = int(input("Digite o primeiro termo da progressão aritmética:\n"))
-razao = int(input("Digite a razão da PA:\n"))
+print("\033[031mGerador de Prograssão Aritmética\033[m"
+      "\n==================================================")
+primeiro_termo = int(input("Primeiro termo:\n"))
+razao = int(input("Razão:\n"))
 cont = 0
 print("Os dez primeiros termos da PA solicitada são:\n")
 
@@ -10,4 +12,4 @@ while cont < 10:
     cont += 1
 
     print(termo, end=" -> ")
-print("Acabou")
+print("Fim")
