@@ -6,4 +6,3 @@ color = {'limpa':'\033[m',
                'ciano':'\033[36m'
                }
 print('Olá! Muito prazer em te conhecer, {}{}{}!!!'.format(color['ciano'], nome, color['limpa']))
-
