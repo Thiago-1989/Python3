@@ -7,5 +7,3 @@ while i < 10:
      i += 1
      sleep(1)
 print("Fim")
-
-

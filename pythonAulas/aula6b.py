@@ -9,6 +9,3 @@ print(var1.isalpha())
 var1 = input('Digite algo: \n')
 print('É do string?')
 print(type(var1))
-
-
-
