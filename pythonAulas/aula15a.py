@@ -7,4 +7,4 @@ print("O %s tem %d anos." %(name, age))
 # Python 3
 print("O {} tem {} anos.".format(name, age))
 # Python 3.6+
-print(f"O {name:- ^20} tem {age} anos e ganha RS{pay:.2f}.")
+print(f"O {name:-^20} tem {age} anos e ganha RS{pay:.2f}.")
