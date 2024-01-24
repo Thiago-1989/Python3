@@ -1,7 +1,6 @@
 name = "Thiago"
 age = 34
 pay = 5200.3
-
 # Python 2
 print("O %s tem %d anos." %(name, age))
 # Python 3
