@@ -2,7 +2,7 @@
 print("-=-" * 10)
 print("{:-^30}".format("Banco TM"))
 print("-=-" * 10)
-valor = int(input("VAlor do saque:   R$"))
+valor = int(input("Valor do saque:   R$"))
 print("-=-" * 10)
 total = valor
 ced = 50
