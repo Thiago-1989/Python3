@@ -2,6 +2,7 @@
 flag = 0
 cont = 0
 pivo = 0
+soma = 0
 flag = int(input("\033[035mDigite um número: [Para parar digite 998]\033[m \n"))
 
 while flag != 998:
