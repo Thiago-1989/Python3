@@ -9,12 +9,12 @@ while True:
             break
     if continuar == "N":
         break
-for item in lista:
-    if item % 2 == 0:
-        listaPar.append(item)
+for i, v in enumerate(lista):
+    if v % 2 == 0:
+        listaPar.append(v)
     else:
-        listaImpar.append(item)
-print("-=-" * 40)
+        listaImpar.append(v)
+print("-=" * 30)
 print(f"A lista completa é {lista}")
 print(f"A lista de valores pares é {listaPar}")
 print(f"A lista de valores ímpares é {listaImpar}")

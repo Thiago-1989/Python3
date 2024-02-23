@@ -14,6 +14,5 @@ while continuar == "S":
         else:
             print("Digite 'S' para sim ou 'N' para não.")
 print("Você digitou os numeros: ", end="",)
-numeros = sorted(numeros)
-for numero in numeros:
-    print(numero, end=" ")
+numeros.sort()
+print(numeros)
