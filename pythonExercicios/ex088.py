@@ -1,21 +1,19 @@
 from random import randint
+from time import sleep
 matriz = []
 palpites = int(input("Deseja gerar quantos palpites? "))
-print("=-=" * 10)
-print(f'{"Mega Sena":^30}')
-print("=-=" * 10)
-
+print("=-=" * 12)
+print(f'{"Palpites Mega Sena":^30}')
+print("=-=" * 12)
 for i in range(palpites):
-    linha = []
-
+    lista = []
+    sleep(.5)
     for j in range(6):
-        num = randint(0, 60)
-        while num in linha:
-            num = randint(0, 60)
-        linha.append(num)
-        linha.sort()
-
-    matriz.append(linha)
-
+        num = randint(1, 61)
+        while num in lista:
+            num = randint(1, 61)
+        lista.append(num)
+        lista.sort()
+    matriz.append(lista[:])
     print(f"Jogo {i + 1}: {matriz[i]}")
-print("=-=" * 10)
+print("=-=" * 4, "Boa sorte!", "=-=" * 4)

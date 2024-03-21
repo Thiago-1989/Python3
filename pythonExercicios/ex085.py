@@ -1,13 +1,13 @@
-lista = [[],[]]
+matriz = [[], []]
 
 for i in range(1, 8):
-    num = eval(input(f"Digite o {i}º valor: "))
-    if num % 2 == 0:
-        lista[0].append(num)
+    valor = eval(input(f"Digite o {i}º valor: "))
+    if valor % 2 == 0:
+        matriz[0].append(valor)
     else:
-        lista[1].append(num)
-lista[0].sort()
-lista[1].sort()
-
-print(f"Os valores pares digitdos foram {lista[0]}")
-print(f"Os valores ímpares digitdos foram {lista[1]}")
+        matriz[1].append(valor)
+matriz[0].sort()
+matriz[1].sort()
+print("-=-" * 20)
+print(f"Os valores pares digitdos foram: {matriz[0]}")
+print(f"Os valores ímpares digitdos foram: {matriz[1]}")
