@@ -35,5 +35,5 @@ while True:
     elif cod == 777:
         break
     else:
-        print("Digite um número válido!")
+        print("ERRO! Não existe jogador no índice solicitado, digite um número válido!")
 print("Programa encerrado!")
