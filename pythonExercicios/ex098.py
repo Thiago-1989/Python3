@@ -2,6 +2,8 @@ from time import sleep
 
 
 def contador(a, b, c):
+    """Faz uma contagem a partir do parâmetro 'a' até o parâmetro 'b' e mostra na tela;
+    o parâmtro 'c' é o passo da contagem, ou seja, de quantos em quantos números."""
     print("=" * 40)
     print(f"Contagem de {a} até {b} de {c} em {c}")
     print("=" * 40)
