@@ -1,4 +1,4 @@
-from util import moeda
+from pythonAulas.aula22módulos.util import moeda
 
 valor = float(input("Digite um valor: R$"))
 print(f"A metade de {moeda.real(valor)} é {moeda.real(moeda.metade(valor))}\n"

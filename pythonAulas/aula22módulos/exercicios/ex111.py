@@ -1,4 +1,4 @@
-from util.moeda import resumo
+from pythonAulas.aula22módulos.util import moeda
 
 valor = float(input("Digite um valor: R$"))
-resumo(valor, 80, 35)
+moeda.resumo(valor, 80, 35)
